@@ -1,70 +1,218 @@
-# Getting Started with Create React App
+# Comando para rodar o servidor, terminal (1)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```js
+yarn start
+```
 
-## Available Scripts
+# Comando para rodar o servidor, terminal (2)
 
-In the project directory, you can run:
+```js
+node .\node_modules\minhas-series-server\index.js
+```
 
-### `yarn start`
+# obs: localhost:3002/api (Vai aparecer os dados do servidor)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```js
+{
+"info": "Minhas Séries Server",
+"datetime": "2019-07-31T02:33:29.617Z"
+}
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Quando chegar uma requisição vai para o proxy, link dentro do package.json
 
-### `yarn test`
+```js
+"proxy": "http://localhost:3002/"
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Bootstrap (Aplicação mais bunita)
 
-### `yarn build`
+```js
+yarn add bootstrap
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Site:
+https://getbootstrap.com/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Reactstrap (Aplicação mais bunita)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```js
+yarn add reactstrap
+```
 
-### `yarn eject`
+Site:
+https://reactstrap.github.io/
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# React-router-dom (Trabalhar com as rotas)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```js
+yarn add react-router-dom
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Abaixando o servidor, instalando todos os pacotes, instalado como dependencia (Back-End)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```js
+yarn add https://github.com/devpleno/minhas-series-server
+```
 
-## Learn More
+# Axios (Puchando os dados)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```js
+yarn add axios
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Rodando dois Script's ao mesmo tempo
 
-### Code Splitting
+```js
+yarn add npm-run-all
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# UseState
 
-### Analyzing the Bundle Size
+Podemos guardar um estado dentro de nossa aplicação
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# useEffect
 
-### Making a Progressive Web App
+O UseEffect tem alguns efeitos, pode ser alguma alteração que tenha feito na minha aplicação, posso definir quais são as dependencias caso eles sejam alteradas faz com que o UseEffect seja executado novamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Salvando meu projeto no GitHub
 
-### Advanced Configuration
+## 1 => Criar um novo repositório, no Github.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 2 => Depois irá aparecer no github, os passos para sincronizar o projeto do vscode, com o github.
 
-### Deployment
+```js
+Opção <code>
+echo "# minhas_series_react_js" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gilbertoreact/minhas_series_react_js.git
+git push -u origin main
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 3 => digite no terminal
 
-### `yarn build` fails to minify
+```js
+echo "# minhas_series_react_js" >> README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 4 => digite no terminal
+
+```js
+git init
+```
+
+obs: caso aparecer um erro, dizendo,
+
+```js
+Reinitialized existing Git repository in C:/Projetos/minhas-series-react-js/.git/
+```
+
+Este comando vai resolver seu problema, para adicionar uma nova url
+
+```js
+git remote -v
+```
+
+## 5 => digite no terminal (Tem aque estar na opção master)
+
+```js
+git init
+```
+
+## 6 => digite no terminal (Verificando arquivos que você pode adicionar, vai estar na cor vermelha)
+
+```js
+git status -u
+```
+
+## 7 => digite no terminal, (Quando faz (git add .) todos os arquivos são enviados) (Para adicionar somente um arquivo, git add README.md)
+
+```js
+ git add .
+```
+
+## 8 => digite no terminal (Agora vai aparecer na cor verde, todos os arquivos adicionados, para ser comitado)
+
+```js
+git status -u
+```
+
+## 9 => digite no terminal (Agora você deu o nome do seu commit, o nome da versão que você editou)
+
+```js
+git commit -m "Primeiro Commit"
+```
+
+## 10 => OBS: Se for sua primeira vez, vai aparecer uma observação para você configurar seu e-mail e seu nome assim:
+
+Configuração global para todos os projetos
+E-mail
+
+```js
+git config --global user.email "e-mail do seu github"
+```
+
+Nome
+
+```js
+git config --global user.name "Seu nome"
+```
+
+Para configurar somente um projeto
+E-mail
+
+```js
+git config user.email "E-mail github"
+```
+
+Nome
+
+```js
+git config user.name "Seu Nome"
+```
+
+## 11 => digite no terminal
+
+```js
+git commit -m "Primeiro Commit"
+```
+
+## 12 => digite no terminal (Não vai conter mais nada, pois já foi comitado)
+
+```js
+git status -u
+```
+
+## 13 => digite no terminal (Para enviar para o github, você deve agora copiar o link)
+
+```js
+git remote add origin https://github.com/gilbertoreact/minhas_series_react_js.git
+```
+
+Obs:
+No meu caso esta assim, porque o nome do meu repositório e (minhas_series_react_js), o github gera este link automático, na opção <>code do github.
+
+## 14 => digite no terminal (Enviando para o github)
+
+```js
+ git push -u origin master
+```
+
+## 15 => digite no terminal (Se no terminal, pedir o username, você coloca o usuario do github)
+
+Exemplo:
+Usuário
+
+```js
+Username for 'https://github.com': (Usuario github)
+```
+
+Password
+
+```js
+Password for 'https://seu e-mail': (Digite sua senha do github)
+```
+# minhas-series-react-js
