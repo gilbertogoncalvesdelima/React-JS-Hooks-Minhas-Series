@@ -1,3 +1,7 @@
+# Link para visualização do projeto
+
+https://minhas-series-react-js.netlify.app/
+
 # Comando para rodar o servidor, terminal (1)
 
 ```js
@@ -215,4 +219,5 @@ Password
 ```js
 Password for 'https://seu e-mail': (Digite sua senha do github)
 ```
+
 # minhas-series-react-js
