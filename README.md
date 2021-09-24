@@ -114,11 +114,21 @@ obs: caso aparecer um erro, dizendo,
 Reinitialized existing Git repository in C:/Projetos/minhas-series-react-js/.git/
 ```
 
-Este comando vai resolver seu problema, para adicionar uma nova url
+Este comando vai resolver seu problema, para adicionar uma nova url.
 
+Verificando qual URL do repositório está.
 ```js
-git remote -v
+git remote -v 
 ```
+Removendo URL do repositorio que estava
+```js
+git remote remove origin
+```
+Adicionando uma nova URL
+```js
+git remote add (URL do seu repositório)
+```
+
 
 ## 5 => digite no terminal (Tem aque estar na opção master)
 
